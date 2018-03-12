@@ -11,7 +11,7 @@
 define('PAYTM_ENVIRONMENT', 'TEST'); // PROD
 define('PAYTM_MERCHANT_KEY', 'tA9cYw!GWHfUH210'); //Change this constant's value with Merchant key downloaded from portal
 define('PAYTM_MERCHANT_MID', 'Roboch21952269479997'); //Change this constant's value with MID (Merchant ID) received from Paytm
-define('PAYTM_MERCHANT_WEBSITE', 'http://188.166.148.110/'); //Change this constant's value with Website name received from Paytm
+define('PAYTM_MERCHANT_WEBSITE', 'WEB_STAGING'); //Change this constant's value with Website name received from Paytm
 
 /*$PAYTM_DOMAIN = "pguat.paytm.com";
 if (PAYTM_ENVIRONMENT == 'PROD') {
