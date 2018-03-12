@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<title>Campus Ambassador</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Left Column -->
+    <div class="w3-third">
+
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <div class="w3-display-bottomleft w3-container w3-text-black" id="Name">
+            <h2></h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <a href="admin_website_contact.html"><button type="button" class="w3-btn w3-teal" style="width:100%;">Website Contacts</button><hr></a>
+          <a href="admin_ambassador_contact.html"><button type="button" class="w3-btn w3-teal" style="width:100%;">Ambassador Contacts</button><hr></a>
+          <a href="admin_ambassador.html"><button type="button" class="w3-btn w3-teal" style="width:100%;">Ambassadors</button><hr>
+          <a href="admin_registration.html"><button type="button" class="w3-btn w3-teal" style="width:100%;">Registrations</button><hr>
+          <a href="admin_leaderboard.html"><button type="button" class="w3-btn w3-teal" style="width:100%;">Leaderboard</button><hr>
+          <a><button type="button" class="w3-btn w3-red" style="width:100%;" onclick="logout()">Log Out</button>
+
+          <hr>
+
+
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Registration</h2>
+        <div class="w3-container" style="overflow-y:auto;">
+          <table class="w3-table-all">
+            <thead>
+            <tr class="w3-teal">
+              <th>Name</th>
+              <th>Email</th>
+              <th>Contact</th>
+              <th>College</th>
+              <th>Payment</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboard">
+
+          </tbody>
+          </table>
+          <br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+
+  <!-- End Grid -->
+  </div>
+
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Copyrights &copy; 2017 Reserved by Meerut Institute of Engineering and Technology, Meerut. All Rights Reserved</p>
+</footer>
+<!--Firebase Initializarion starts-->
+<script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script src="js/init_Firebase.js"></script>
+<script src="js/session.js"></script>
+<script src="js/logout.js"></script>
+<script>
+  /*var database = firebase.database().ref();
+  var name;
+  var email;
+  var contact;
+  var college;
+  database.child("Registration").once('value', function(snapshot)
+  {
+
+        snapshot.forEach(function(childSnapshot) {
+        name=childSnapshot.val().Name;
+        email=childSnapshot.val().Email;
+        contact=childSnapshot.val().Contact;
+        college=childSnapshot.val().College;
+        $('#admin_ambassador').append("<tr><td>"+name+"</td><td>"+email+"</td><td>"+contact+"</td><td>"+college+"</td></tr>");
+  });
+});*/
+</script>
+</body>
+</html>

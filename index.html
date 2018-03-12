@@ -1,0 +1,410 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <!-- META -->
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- SITE TITLE -->
+        <title>Robochamps</title>
+
+
+        <!-- FAVICON -->
+        <link rel="icon" href="images/favicon.jpg">
+		<link rel="icon" href="images/favicon.jpg" sizes="57x57">
+		<link rel="icon" href="images/favicon.jpg" sizes="72x72">
+		<link rel="icon" href="images/favicon.jpg" sizes="114x114">
+		<link rel="icon" href="images/favicon.jpg" sizes="144x144">
+
+        <!-- STYLE -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--[if lt IE 9]>
+            <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <!-- PRELOADER-->
+        <div id="preloader">
+            <div class="clock"></div>
+        </div>
+        <!-- WRAPPER -->
+        <section class="wrapper" id="container">
+            <!-- START HEADER SECTION -->
+            <header class="header-section">
+                <nav class="navbar navbar-default">
+                    <div class="container">
+                    <ul class="nav navbar-nav mobile-logo" id="">
+                        <li class="logo"><a class="navbar-brand" href="index.html"><span>Robochamps</span></a></li>
+                    </ul><!-- end of /.menu item -->
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav" id="top-menu">
+                                <li class="active"><a href="#home">HOME</a></li>
+                                <li><a href="#about">ABOUT US	</a></li>
+								<li><a href="#services">COORDINATORS</a></li>
+                                <li class="logo"><a class="navbar-brand" href="index.html"><span>Robochamps</span></a></li>
+								<li><a href="#work">EVENTS</a></li>
+								<li><a target="_blank" href="Ambassador/index.html">AMBASSADOR</a></li>
+                                <li><a href="#contact">CONTACT</a></li>
+                            </ul><!-- end of /.menu item -->
+                        </div><!--end of /.navbar-collapse -->
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                            </button><!-- end of sticky button -->
+                            <!--<a class="navbar-brand" href="index.html">Asbe</a>--><!-- end of /. logo title -->
+                        </div>
+
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-left" id="top-menu">
+
+                            </ul><!-- end of /.menu item -->
+                        </div><!--end of /.navbar-collapse -->
+                    </div><!--end of /.container-fluid -->
+                </nav><!-- end of /. navbar -->
+            </header><!-- end of /. header section -->
+
+
+            <!-- START HOME SECTION -->
+            <header class="cover-section" id="home">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="counter-box wow fadeInDown animated col-md-12">
+                            <h2>Time to battle</h2>
+                            <div id="countdowntimer" class="col-md-8 col-md-offset-2 col-sm-12">
+                                <ul class="countdown row">
+                                    <li class="couner-box col-md-3">
+                                        <b class="days"><span id="days">00</span></b>
+                                        <p class="displayformat">days</p>
+                                    </li>
+                                    <li class="couner-box col-md-3">
+                                        <b class="hours"><span id="hours">00</span></b>
+                                        <p class="displayformat">hous</p>
+                                    </li>
+                                    <li class="couner-box col-md-3">
+                                        <b class="minutes"><span id="minutes">00</span></b>
+                                        <p class="displayformat">mins</p>
+                                    </li>
+                                    <li class="couner-box col-md-3">
+                                        <b class="seconds"><span id="seconds">00</span></b>
+                                        <p class="displayformat">secs</p>
+                                    </li>
+                                </ul>
+                                      <a href="./Paytm/TxnTest.php"><b>Register Here</b></a>
+                            </div>
+
+                        </div>
+                    </div><!-- end /. row-->
+                </div><!-- end of /.container fluid -->
+            </header><!-- end of /. home section -->
+
+			<script>
+			// Set the date we're counting down to
+			var countDownDate = new Date("Mar 31, 2018 09:00:00").getTime();
+
+			// Update the count down every 1 second
+			var x = setInterval(function() {
+
+			// Get todays date and time
+			var now = new Date().getTime();
+
+			// Find the distance between now an the count down date
+			var distance = countDownDate - now;
+
+			// Time calculations for days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			// Display the result in an element with id="demo"
+			document.getElementById("days").innerHTML = days;
+			document.getElementById("hours").innerHTML = hours;
+			document.getElementById("minutes").innerHTML = minutes;
+			document.getElementById("seconds").innerHTML = seconds;
+
+			// If the count down is finished, write some text
+			if (distance < 0)
+			{
+				clearInterval(x);
+				document.getElementById("days").innerHTML = "O";
+				document.getElementById("hours").innerHTML = "P";
+				document.getElementById("minutes").innerHTML = "E";
+				document.getElementById("seconds").innerHTML = "N";
+			}
+			}, 1000);
+			</script>
+
+            <!-- START ABOUT SECTION -->
+            <section class="about-section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="section-title">
+                                <h2>About</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h2 class="how-title">Intro</h2>
+                            <div class="row about-item">
+								<div class="col-md-4">
+                                    <div class="who-icon">
+                                        <i class="pe-7s-star"></i>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="who-caption">
+                                        <p>Robotics competition that seeks to increase student interest and involvement in science,  technology and engineering through sustainable and affordable robotics engineering programs .Aim is to create an engineering event to encourage individuals with different skill sets to form Co- operative teams to design,  fabricate and operate a robot. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end of /.coloumn -->
+                        <div class="col-sm-6">
+                            <h2 class="how-title">New This Year</h2>
+                            <div class="skill">
+                                <p>Project Expo</p>
+                                <div class="skill-bar skill1  wow slideInLeft animated">
+                                    <span class="skill-count1">95%</span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>Hackatronics</p>
+                                <div class="skill-bar skill2 wow slideInLeft animated">
+                                     <span class="skill-count2">85%</span>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <p>Ricochet</p>
+                                <div class="skill-bar skill3 wow slideInLeft animated">
+                                    <span class="skill-count3">75%</span>
+                                </div>
+                            </div>
+                        </div><!-- end of /.coloumn -->
+                    </div><!-- end of /row. -->
+                </div><!-- end of /.container -->
+            </section><!-- end of /.about section -->
+
+			<!-- START COORDINATOR SECTION -->
+            <section class="service-section" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="section-title">
+                                <h2>COORDINATORS</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                             <div class="service-item  wow fadeInDown animated">
+                                <div class="service-icon">
+                                     <i class="pe-7s-gleam"></i><!-- about icon -->
+                                </div>
+                                <h2>ANU SIROHI<br>(Head Coordinator)<br>8193030919<br></h2><!-- about title -->
+
+                             </div><!-- end of /.about item 1-->
+                        </div><!-- end of /.coloumn -->
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                             <div class="service-item  wow fadeInDown animated">
+                                <div class="service-icon">
+                                    <i class="pe-7s-monitor"></i><!-- about icon -->
+                                </div>
+
+                                <h2>TAYYEB AHMAD<br>(Events Coordinator)<br>7830302727</h2><!-- about title -->
+                             </div><!-- end of /.about item 2-->
+                        </div><!-- end of /.coloumn -->
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                             <div class="service-item  wow fadeInDown animated">
+                                <div class="service-icon">
+                                    <i class="pe-7s-camera"></i><!-- about icon -->
+                                </div>
+                                <h2>ANMOL SIROHI<br>(Technical Coordinator)</h2><!-- about title -->
+                                <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero ace venenatis faucibus. Nullam quis ante. Maecenas nec odio et ante tinc  unt tempus Donec.</p>
+                             </div><!-- end of /.about item 3-->
+                        </div><!-- end of /.coloumn -->
+                    </div><!-- end of /row. -->
+                </div><!-- end of /.container -->
+            </section><!-- end of /.COORDINATOR section -->
+
+
+            <!-- START EVENT SECTION -->
+            <section class="works-section" id="work">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="section-title">
+                                <h2>Events</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="works" class="owl-carousel owl-theme col-sm-12 gallery">
+                            <div class="item works-item">
+                                <img src="images/work2.jpg" width="350" height="350" alt="">
+                                <div class="overlay">
+                                    <a href="./Rules/rule_template.html">
+                                        <i class="pe-7s-search"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="pe-7s-link"></i>
+                                    </a>
+                                </div>
+                            </div><!-- end of /.works item 1 -->
+                            <div class="item works-item">
+                                <img src="images/work1.jpg" width="350" height="350" alt="">
+                                <div class="overlay">
+                                    <a href="images/work1.jpg" data-gal="prettyPhoto[gallery2]">
+                                        <i class="pe-7s-search"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="pe-7s-link"></i>
+                                    </a>
+                                </div>
+                            </div><!-- end of /.works item 1 -->
+                            <div class="item works-item">
+                                <img src="images/work2.jpg" width="350" height="350" alt="">
+                                <div class="overlay">
+                                    <a href="images/work1.jpg" data-gal="prettyPhoto[gallery2]">
+                                        <i class="pe-7s-search"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="pe-7s-link"></i>
+                                    </a>
+                                </div>
+                            </div><!-- end of /.works item 1 -->
+                            <div class="item works-item">
+                                <img src="images/work3.jpg" width="350" height="350" alt="">
+                                <div class="overlay">
+                                    <a href="images/work1.jpg" data-gal="prettyPhoto[gallery2]">
+                                        <i class="pe-7s-search"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="pe-7s-link"></i>
+                                    </a>
+                                </div>
+                            </div><!-- end of /.works item 1 -->
+
+                        </div><!-- end of /.clientiten box  -->
+                        <div class="customNavigation works-navigation">
+                            <a class="btn-work works-prev"><i class="pe-7s-angle-left"></i></a>
+                            <a class="btn-work works-next"><i class="pe-7s-angle-right"></i></a>
+                        </div><!-- end of /.client navigation -->
+                    </div><!-- end of /row. -->
+                </div><!-- end of /.container -->
+            </section><!-- end of /.event section -->
+
+            <!-- START CONTACT SECTION -->
+            <section class="contact-section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="section-title">
+                                <h2>Get In Touch</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-10 col-sm-offset-1">
+                            <div class="row">
+                                <div class="form-horizontal">
+                                    <div class="col-sm-6">
+                                        <div class="input-group name-input wow fadeInDown animated">
+                                            <input type="text" class="form-control" id="wb_name" placeholder="YOUR NAME">
+                                            <div class="input-group-addon">
+                                                <i class="pe-7s-users"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="input-group wow fadeInDown animated">
+                                            <input type="text" class="form-control" id="wb_email" placeholder="YOUR EMAIL">
+                                            <div class="input-group-addon">
+                                                <i class="pe-7s-mail"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="input-group wow fadeInDown animated">
+                                            <input type="text" class="form-control" id="wb_contact" placeholder="YOUR CONTACT">
+                                            <div class="input-group-addon">
+                                                <i class="pe-7s-phone"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="input-group wow fadeInDown animated">
+                                            <input type="text" class="form-control" id="wb_subject" placeholder="YOUR SUBJECT">
+                                            <div class="input-group-addon">
+                                                <i class="pe-7s-paperclip"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="input-group textarea-group wow fadeInDown animated">
+                                            <textarea class="form-control message" rows="6" placeholder="YOUR MASSAGE" id="wb_message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 contact-submit wow fadeInDown animated">
+                                        <div class="contact-btn">
+                                            <input type="button" class="message-btn" value="Send" onclick="website_contact()"/>
+                                        </div>
+                                    </div>
+                                </div><!-- end of/. form -->
+
+                                <div class="social-media">
+                                    <ul>
+                                        <!--<li><a href="#"><i class="fa fa-facebook"></i> </a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i> </a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i> </a></li>-->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end of /.container -->
+            </section><!-- end of /.contact section -->
+
+            <!-- START FOOTER SECTION -->
+            <footer class="copyright-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="copyright-area">Copyrights &copy; 2017 Reserved by Meerut Institute of Engineering and Technology, Meerut. All Rights Reserved</p>
+                        </div>
+                    </div><!-- end of /.row -->
+                </div><!-- end of /.container -->
+            </footer><!-- end of/. copyright section -->
+
+        </section><!-- end of /.wrapper section -->
+        <!--Firebase Initializarion starts-->
+        <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+        <script src="js/init_Firebase.js"></script>
+        <script src="js/websitecontact.js"></script>
+        <!-- JQUERY LIB -->
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <!-- BOOTSTRAP -->
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <!-- OWL CAROUSEL -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- RAIN SCRIPT -->
+        <!--<script src="js/rainyday.min.js"></script>    -->
+        <!-- SMOTH SCROLL -->
+        <script src="js/smoth-scroll.js"></script>
+        <!-- JQUERY COUNTER -->
+        <script src="js/jquery.downCount.js"></script>
+        <!-- WOW JS  -->
+        <script src="js/wow.min.js"></script>
+        <script src="js/jquery.prettyPhoto.js"></script>
+        <!-- CUSTOM JS-->
+        <script src="js/custom.js"></script>
+    </body>
+</html>
